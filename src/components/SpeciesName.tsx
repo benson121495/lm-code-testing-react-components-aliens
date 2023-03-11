@@ -1,4 +1,4 @@
-interface interfaceSpeciesNameProps {
+export interface interfaceSpeciesNameProps {
 
     speciesName: string;
 
@@ -6,16 +6,15 @@ interface interfaceSpeciesNameProps {
 }
 
 
-const SpeciesName: React.FC<interfaceSpeciesNameProps> = ({ speciesName, onChangeSpeciesName }) => (
+const SpeciesName: React.FC<interfaceSpeciesNameProps> = ({ speciesName, onChangeSpeciesName }) => {
 
-    <>
+    return (
+        <>
+            <label htmlFor='speciesName'>Species Name: </label>
+            <input id='idOfSpeciesName' type='text' value={speciesName} onChange={onChangeSpeciesName} />
+        </>
 
-        <label htmlFor='speciesName'>Species Name: </label>
-
-        <input id='idOfSpeciesName' type='text' value={speciesName} onChange={onChangeSpeciesName} />
-
-    </>
-
-);
+    );
+}
 
 export default SpeciesName; 
