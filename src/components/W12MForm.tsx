@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import SpeciesName from './speciesName';
-import PlanetName from './planetName';
-import NumberOfBeings from './numberOfBeing';
-import WhatIsTwoPlusTwo from './whatIsTwoPlusTwo';
+import SpeciesName from './SpeciesName';
+import PlanetName from './PlanetName';
+import NumberOfBeings from './NumberOfBeing';
+import WhatIsTwoPlusTwo from './WhatIsTwoPlusTwo';
 import ReasonForSparing from './ReasonForSparing';
 
 import W12MHeader from './W12MHeader';
