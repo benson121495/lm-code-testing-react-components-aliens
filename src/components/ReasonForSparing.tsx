@@ -11,11 +11,11 @@ export interface interfaceReasonForSparingProps {
 
 
 const ReasonForSparing: React.FC<interfaceReasonForSparingProps> = ({ reasonForSparing, onChangeReasonForSparing }) => {
-   
+
     const [errorMessage, setErrorMessage] = useState<string | undefined>('');
     const validate: (value: string) => string | undefined = (value) => {
-        if ((value.length < 2 || value.length >= 200)) {
-            return "Reason for sparing: Must be between 2 and 200 characters."
+        if ((value.length < 4 || value.length >= 200)) {
+            return "Reason for sparing: Must be between 4 and 200 characters."
         };
 
         return undefined;
